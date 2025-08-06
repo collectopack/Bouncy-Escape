@@ -18,6 +18,9 @@ let sunDirection = 1;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
   setupSounds();
   startMusicLoop();
   createStars();
