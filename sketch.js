@@ -17,10 +17,11 @@ let sunPulse = 0;
 let sunDirection = 1;
 
 function setup() {
+  // ✅ Hide loading bar if it exists
+  const loading = document.getElementById("loading");
+  if (loading) loading.style.display = "none";
+
   createCanvas(windowWidth, windowHeight);
-  function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
   setupSounds();
   startMusicLoop();
   createStars();
