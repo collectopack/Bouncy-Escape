@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Your Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>My p5.js Game</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       overflow: hidden;
       touch-action: none;
+      background: black; /* Optional: match your background */
     }
 
     canvas {
@@ -17,9 +18,17 @@
     }
   </style>
 </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+<body>
+  <!-- Optional: Add a loading message -->
+  <main id="loading" style="color:white;text-align:center;font-family:sans-serif;margin-top:20px;">
+    Loading...
+  </main>
+
+  <!-- ✅ Load p5.js & p5.sound -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
+
+  <!-- ✅ Your Sketch -->
+  <script src="sketch.js"></script>
+</body>
 </html>
